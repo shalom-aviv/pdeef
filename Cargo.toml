@@ -1,0 +1,23 @@
+[package]
+name = "pdeef"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "pdeef"
+path = "src/app/main.rs"
+
+[lib]
+path = "src/lib/lib.rs"
+
+[dependencies]
+dify = "^0.4.0"
+riff = "^0.1.1"
+pdfium-render = "^0.7.14"
+
+#additions
+structopt = { version = "0.2", default-features = false }
+image = "^0.24.3"
+uuid = { version = "1.1.2", features = ["v4", "fast-rng", "macro-diagnostics",] }
